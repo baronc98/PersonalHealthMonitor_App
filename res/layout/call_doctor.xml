@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/ghostwhite"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    >
+
+    <ImageView
+        android:id="@+id/modify"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/modify"
+        android:layout_gravity="right"
+        android:layout_marginTop="15dp"
+        app:tint="@color/seaGreenPrimary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        >
+
+<!--        <pl.droidsonroids.gif.GifImageView-->
+<!--            android:layout_width="250dp"-->
+<!--            android:layout_height="250dp"-->
+<!--            android:src="@drawable/doctor_section"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginRight="5dp"-->
+<!--            />-->
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        app:lottie_rawRes="@raw/doctor_animation"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        />
+
+
+    </LinearLayout>
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/descriptionCallDoctor"-->
+<!--        android:textSize="19sp"-->
+<!--        android:textColor="@color/orangeYellow"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        />-->
+
+    <com.skyfishjy.library.RippleBackground
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/content"
+        app:rb_color="#0099CC"
+        app:rb_radius="32dp"
+        app:rb_rippleAmount="4"
+        app:rb_duration="3000"
+        app:rb_scale="6">
+
+
+        <TextView
+            android:background="@drawable/back_data_section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/introCallDoctor"
+            android:textSize="22sp"
+            android:textColor="@color/rippelColor"
+            android:gravity="center"
+            />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/callImage"
+            android:src="@drawable/call"/>
+
+    </com.skyfishjy.library.RippleBackground>
+
+</LinearLayout>

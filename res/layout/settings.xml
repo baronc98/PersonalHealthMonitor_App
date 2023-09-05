@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/ghostwhite"
+    >
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="40dp"
+        android:paddingBottom="60dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/settings"
+                android:layout_marginTop="10dp"
+                app:tint="@color/rippelColor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/title"
+                android:text="@string/settings"
+                android:textSize="24sp"
+                android:textColor="#525252"
+                android:textStyle="bold"
+                android:layout_marginTop="11dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/back_data_section"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settingsIntro"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="19sp"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/temperatureChartButton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/monitoring"
+                    android:clickable="true"
+                    android:layout_marginTop="8dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/monitoringTemperature"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="19sp"
+                    android:textColor="@color/textColor"
+                    android:gravity="center"
+                    />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/settingSwitch1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editTemperatureMonitoring"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="30dp"
+                android:hint="Inserisci soglia..."
+                android:inputType="numberDecimal"
+                android:visibility="gone"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/monitoringPains"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="19sp"
+                    android:textColor="@color/textColor"
+                    android:gravity="center"
+                    />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/settingSwitch2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    />
+
+            </LinearLayout>
+
+            <!--            <EditText-->
+            <!--                android:id="@+id/editPainsMonitoring"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginLeft="25dp"-->
+            <!--                android:layout_marginRight="30dp"-->
+            <!--                android:hint="Inserisci soglia..."-->
+            <!--                android:inputType="numberDecimal"-->
+            <!--                android:visibility="gone"-->
+            <!--                />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/monitoringPressure"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="19sp"
+                    android:textColor="@color/textColor"
+                    android:gravity="center"
+                    />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/settingSwitch3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    />
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editPressureMonitoring"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="30dp"
+                android:hint="Inserisci soglia..."
+                android:inputType="numberDecimal"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:id="@+id/saveValueSettings"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/save"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:clickable="true"
+                android:focusable="true"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:background="@drawable/back_data_section"
+            >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hourDailyNotification"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:textColor="@color/rippelColor"
+                />
+
+            <TimePicker
+                android:id="@+id/timePicker"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:timePickerMode="spinner"
+                android:layout_gravity="center"
+                />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:src="@drawable/settings_animation"
+            android:layout_gravity="center"
+            android:layout_marginTop="-15dp"
+            />
+
+            <Button
+                android:id="@+id/buttonSaveTimePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/set"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:textColor="@color/cardview_light_background"
+                android:layout_alignParentBottom="true"
+                android:backgroundTint="@color/button"
+                android:layout_marginTop="15dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

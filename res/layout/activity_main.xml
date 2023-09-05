@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/ghostwhite"
+    >
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/filters"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="202dp"
+        android:layout_marginTop="22dp"
+        android:clickable="true"
+        android:src="@drawable/filter"
+        android:tint="@color/seaGreenPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/calendarAdd"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:src="@drawable/calendar_add"
+        android:tint="@color/seaGreenPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.675"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/notificationBell"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:src="@drawable/notificationbell"
+        android:tint="@color/seaGreenPrimary"
+        app:layout_constraintEnd_toStartOf="@+id/settings"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toEndOf="@+id/calendarAdd"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/settings"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
+        android:tint="@color/seaGreenPrimary"
+        android:clickable="true"
+        />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="55dp"
+        app:layout_constraintTop_toBottomOf="@id/settings"
+        app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
+        app:layout_constraintVertical_bias="0"
+        tools:context=".MainActivity"
+        >
+
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:menu="@menu/itmebottomtoolbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:itemRippleColor="@color/seaGreenRipple"
+        app:itemTextColor="@color/bottom_navigation_bar_color"
+        app:itemIconTint="@color/bottom_navigation_bar_color"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

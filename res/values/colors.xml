@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#f8f9ff</color>
+    <color name="ghostwhite">#f8f8ff</color>
+    <color name="colorPrimaryLight">#fdfdfd</color>
+    <color name="cardColor">#ffffff</color>
+    <color name="seaGreenPrimary">#2cd9d0</color>
+    <color name="seaGreenRipple">#98ede8</color>
+    <color name="blackNavigationBar">#595959</color>
+    <color name="textColor">#525252</color>
+    <color name="backgroundSection">#f8fcff</color>
+    <color name="backgroundBigSection">#ff6767</color>
+    <color name="button">#63e3dc</color>
+    <color name="orangeYellow">#ffba00</color>
+    <color name="redChart">#ff4d4d</color>
+
+</resources>

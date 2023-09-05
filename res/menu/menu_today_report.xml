@@ -1,0 +1,42 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/menu_today_report"
+    >
+
+    <item
+        android:id="@+id/info"
+        android:orderInCategory="100"
+        android:title="@string/info"
+        app:showAsAction="never"
+        />
+    <item android:id="@+id/temperature"
+        android:title="@string/temperature"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/blood"
+        android:title="@string/blood"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+
+<!--    <item android:id="@+id/glycemicIndex"-->
+<!--        android:title="@string/glycemicIndex"-->
+<!--        android:orderInCategory="100"-->
+<!--        app:showAsAction="never"/>-->
+
+    <item android:id="@+id/pains"
+        android:title="@string/pains"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+
+<!--    <item android:id="@+id/drug"-->
+<!--        android:title="@string/drug"-->
+<!--        android:orderInCategory="100"-->
+<!--        app:showAsAction="never"/>-->
+
+    <item android:id="@+id/physicalActivity"
+        android:title="@string/physicalActivity"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+
+</menu>

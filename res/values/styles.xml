@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="materialDesign" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <!-- <item name="android:navigationBarColor">@color/colorPrimary</item> -->
+    </style>
+
+    <style name="popupMenuStyle" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:itemBackground">@drawable/popupstyle</item>
+    </style>
+
+<!--    <style name="DialogTheme" parent="@android:style/Widget.Material.Light.DatePicker">-->
+<!--        <item name="android:headerBackground">@color/seaGreenPrimary</item>-->
+<!--        <item name="android:calendarTextColor">@color/redChart</item>-->
+<!--        <item name="android:dayOfWeekBackground">@color/orangeYellow</item>-->
+<!--        <item name="android:yearListSelectorColor">@color/textColor</item>-->
+<!--        <item name="android:datePickerMode">calendar</item>-->
+<!--        <item name="android:minDate">01/01/2000</item>-->
+<!--        <item name="android:datePickerStyle">@style/DialogTheme</item>-->
+<!--    </style>-->
+
+</resources>

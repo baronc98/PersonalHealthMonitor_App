@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/backgroundSection"
+    >
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/backgroundSection"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="40dp"
+        android:paddingBottom="60dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/pain"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/title"
+                android:text="@string/pains"
+                android:textSize="24sp"
+                android:textColor="#525252"
+                android:textStyle="bold"
+                android:layout_marginTop="11dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="18dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/attention"
+                android:layout_marginRight="10dp"
+                android:textSize="19sp"
+                android:textColor="@color/bottom_navigation_bar_color"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/attention"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="3dp"
+                    />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/attention"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="3dp"
+                    />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/attention"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="3dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/back_data_section"
+        android:padding="15dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/introPains"
+            android:layout_marginRight="10dp"
+            android:textSize="19sp"
+            android:textColor="@color/seaGreenPrimary"
+            />
+
+            <CheckBox
+                android:id="@+id/headPains"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/headPains"
+                android:textColor="@color/textColor"
+                android:textSize="17sp"
+                />
+
+            <CheckBox
+                android:id="@+id/artsPains"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/artsPains"
+                android:textColor="@color/textColor"
+                android:textSize="17sp"
+                />
+
+            <CheckBox
+                android:id="@+id/bellyPains"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bellyPains"
+                android:textColor="@color/textColor"
+                android:textSize="17sp"
+                />
+
+            <CheckBox
+                android:id="@+id/eyesPains"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/eyesPains"
+                android:textColor="@color/textColor"
+                android:textSize="17sp"
+                />
+
+            <CheckBox
+                android:id="@+id/backPains"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/backPains"
+                android:textColor="@color/textColor"
+                android:textSize="17sp"
+                />
+
+            <CheckBox
+                android:id="@+id/neckPains"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/neckPains"
+                android:textColor="@color/textColor"
+                android:textSize="17sp"
+                />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/introOtherPains"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="19sp"
+                android:layout_weight="1"
+                />
+
+
+            <ImageView
+                android:id="@+id/temperatureChartButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/sad_emoticon"
+                android:clickable="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/otherPains"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/other"
+            android:textColor="@color/textColor"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pieChart"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="19sp"
+                android:layout_weight="1"
+                />
+
+
+            <ImageView
+                android:id="@+id/painsChartButton"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/pie_chart"
+                android:clickable="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dp"
+                />
+
+        </LinearLayout>
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/painsChart"
+            />
+
+        <ImageView
+            android:id="@+id/saveIMGpains"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/save"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            />
+
+        <Button
+            android:id="@+id/savePainsSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/saveButton"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:textColor="@color/cardview_light_background"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="@color/button"
+            android:layout_marginTop="15dp"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

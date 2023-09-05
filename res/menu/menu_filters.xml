@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item
+        android:id="@+id/infoFilter"
+        android:title="@string/info"
+        app:showAsAction="never"
+        android:checkable="true"
+        />
+
+    <item
+        android:id="@+id/tempFilter"
+        android:title="@string/temperature"
+        app:showAsAction="never"
+        android:checkable="true"
+        />
+
+    <item
+        android:id="@+id/bloodFilter"
+        android:title="@string/blood"
+        app:showAsAction="never"
+        android:checkable="true"
+        />
+
+    <item
+        android:id="@+id/painsFilter"
+        android:title="@string/pains"
+        app:showAsAction="never"
+        android:checkable="true"
+        />
+
+    <item
+        android:id="@+id/activityFilter"
+        android:title="@string/physicalActivity"
+        app:showAsAction="never"
+        android:checkable="true"
+        />
+</menu>
